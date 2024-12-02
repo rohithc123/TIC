@@ -52,7 +52,7 @@ export default function Home() {
         </motion.div>
 
         {/* Hero Text */}
-        <div className="bg-black  items-center justify-around flex flex-col">
+        <div className="  items-center justify-around flex flex-col">
           <div className="text-2xl text-center mt-8">
             <div style={rubik.style} className="text-3xl font-medium">
               November 3
