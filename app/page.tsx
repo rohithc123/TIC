@@ -3,8 +3,9 @@ import art_ribbon from '@/public/art_ribbon.jpg'
 import expand_more from '@/public/expand_more.svg'
 import hero from '@/public/hero.png'
 import location from '@/public/location.svg'
-import nontech_ticket from '@/public/nontech-ticket.png'
-import tech_ticket from '@/public/tech-ticket.png'
+
+import summit from '@/public/summit.png'
+import competitions from '@/public/competitions.png'
 import sponsor_expleo from '@/public/sponsor_expleo.png'
 import sponsor_slam from '@/public/sponsor_slam.jpeg'
 import sponsor_art from '@/public/sponsor_art.png'
@@ -54,7 +55,7 @@ export default function Home() {
         {/* Hero Text */}
         <div className="  items-center justify-around flex flex-col">
           <div className="text-2xl text-center mt-8">
-            <div className="text-gradient-green text-6xl font-extrabold">
+            <div className="text-gradient-green text-4xl md:text-6xl font-extrabold">
               <span className="bg-gradient-to-r from-lime-green to-cyan-mint inline-block text-transparent bg-clip-text">Inspire&#160;</span>
                Create Elevate
             </div>
@@ -82,49 +83,47 @@ export default function Home() {
           />
         </div>
       </header>
+      <div className="bg-gradient-to-br from-lime-green to-cyan-mint flex flex-col justify-center items-center w-[100%] ">
+        <h2 className="mt-8 text-4xl md:text-6xl font-bold">About Us</h2>
+          <div className="w-screen grid justify-items">
 
-      <div className="w-screen grid justify-items">
-        <div className="mx-4 rounded-lg overflow-hidden md:max-w-[80%]  mt-8 justify-self-center">
+        <div className="mx-4 rounded-lg overflow-hidden md:max-w-[80%] mt-8 justify-self-center">
           <video autoPlay muted loop>
-            <source src="/promo.webm" type="video/webm" />
-            <source src="/promo.mp4" type="video/mp4" />
+            <source src="/promo.webm" type="video/webm"/>
+            <source src="/promo.mp4" type="video/mp4"/>
           </video>
         </div>
       </div>
-
-      {/* Art Ribbon Divider */}
-      <div className="relative overflow-hidden min-h-[140px] w-full my-16 md:mb-8">
-        <Image
-          className="object-cover md:object-contain"
-          src={art_ribbon}
-          alt=""
-          fill
-        />
+        <div className="mt-8 mb-8 w-[75%] h-auto border-t-2 border-l-2 border-white drop-shadow-2xl bg-white/50 p-4 text-sm flex text-center  rounded-lg">
+          Think India is a platform dedicated to fostering innovation, empowering youth, and driving sustainable development across India. It aims to unite bright minds to create impactful solutions for the nation’s progress.
+        </div>
       </div>
 
       {/* Events section */}
-      <section className="w-full">
+      <section className=" mt-20 w-full">
         <h2
-          style={rubik.style}
-          className="text-3xl border-b-[1px] border-void-500 pb-[4px] mx-6"
-          data-aos="fade-down"
+            // style={rubik.style}
+            className="text-3xl font-bold  border-void-500 pb-[4px] mx-6 "
+            data-aos="fade-down"
         >
           Events
         </h2>
+        <div className="mx-6  h-[1px] bg-gradient-to-r from-lime-green to-cyan-mint cursor-pointer"/>
+
 
         {/* Stats grid */}
         <div
-          className="my-10 md:my-16 px-8 flex flex-col md:flex-row"
-          data-aos="fade-down"
+            className="my-10 md:my-16 px-8 flex flex-col md:flex-row"
+            data-aos="fade-down"
         >
           {/* Stat row */}
           <div className="flex flex-row mb-8 md:mb-0 md:w-1/2">
             <div className="w-1/2">
-              <div className="text-3xl font-semibold">21</div>
+              <div className="text-3xl font-semibold">15</div>
               <div className="text-2xl leading-6 text-void-200">events</div>
             </div>
             <div className="w-1/2">
-              <div className="text-3xl font-semibold">593</div>
+              <div className="text-3xl font-semibold">300</div>
               <div className="text-2xl leading-6 text-void-200">
                 participants
               </div>
@@ -134,7 +133,7 @@ export default function Home() {
           {/* Stat row */}
           <div className="flex flex-row md:w-1/2" data-aos="fade-down">
             <div className="w-1/2">
-              <div className="text-3xl font-semibold">150+</div>
+              <div className="text-3xl font-semibold">&#8377;75k+</div>
               <div className="text-2xl leading-6 text-void-200">prizes</div>
             </div>
             {/* <div className="w-1/2">
@@ -149,26 +148,26 @@ export default function Home() {
         {/* cards */}
         <div className="flex flex-col items-center px-2 gap-8 md:gap-16">
           <Link
-            data-aos="flip-up"
-            href="/events/technical"
-            className="mt-2 md:mt-0 md:px-2  "
+              data-aos="flip-up"
+              href="/events/technical"
+              className="mt-2 md:mt-0 md:px-2  "
           >
             <Image
-              className="transition hover:scale-105"
-              src={tech_ticket}
-              alt="Ticket shape that read non techincal events"
+                className="transition hover:scale-105"
+                src={summit}
+                alt="Ticket shape that read non techincal events"
             />
           </Link>
 
           <Link
-            data-aos="flip-up"
-            href="/events/nontechnical"
-            className="transition mt-8 md:mt-0 md:px-2  "
+              data-aos="flip-up"
+              href="/events/nontechnical"
+              className="transition mt-8 md:mt-0 md:px-2  "
           >
             <Image
-              className="transition hover:scale-105"
-              src={nontech_ticket}
-              alt="Ticket shape that read techincal events"
+                className="transition hover:scale-105"
+                src={competitions}
+                alt="Ticket shape that read techincal events"
             />
           </Link>
         </div>
