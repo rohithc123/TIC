@@ -40,25 +40,31 @@ export default function Home() {
   return (
     <main ref={ref} className="flex flex-col items-center md:max-w-[768px]">
       <header className="pt-40 flex flex-col items-center min-h-[100svh] md:h-fit justify-around">
-        <motion.div style={{ y: backgroundY }}>
-          <Image
-            src={hero}
-            alt="Vector logo of a red-yellow lion"
-            width={500}
-            height={500}
-            priority={true}
-            loading="eager"
-            placeholder="blur"
-          />
-        </motion.div>
+        <div className="flex flex-col justify-center items-center">
+          <div>
+            <motion.div style={{y: backgroundY}}>
+              <Image
+                  src={hero}
+                  alt="Vector logo of a red-yellow lion"
+                  width={500}
+                  height={500}
+                  priority={true}
+                  loading="eager"
+                  placeholder="blur"
+              />
+            </motion.div>
+          </div>
+          <div className="mt-8 text-gradient-green text-4xl text-center md:text-6xl font-extrabold">
+              <span
+                  className="bg-gradient-to-r from-lime-green to-cyan-mint inline-block text-transparent bg-clip-text w-[80%]">Inspire&#160;</span>
+            Create Elevate
+          </div>
+        </div>
 
         {/* Hero Text */}
         <div className="  items-center justify-around flex flex-col">
           <div className="text-2xl text-center mt-8">
-            <div className="text-gradient-green text-4xl md:text-6xl font-extrabold">
-              <span className="bg-gradient-to-r from-lime-green to-cyan-mint inline-block text-transparent bg-clip-text">Inspire&#160;</span>
-               Create Elevate
-            </div>
+
             {/*<div className="text-void-300 flex">*/}
             {/*  @ IITR*/}
             {/*  <Link*/}
