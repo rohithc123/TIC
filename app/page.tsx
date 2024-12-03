@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <main ref={ref} className="flex flex-col items-center md:max-w-[768px]">
-      <header className="pt-20 flex flex-col items-center min-h-[100svh] md:h-fit justify-around">
+      <header className="pt-40 flex flex-col items-center min-h-[100svh] md:h-fit justify-around">
         <motion.div style={{ y: backgroundY }}>
           <Image
             src={hero}
@@ -54,23 +54,24 @@ export default function Home() {
         {/* Hero Text */}
         <div className="  items-center justify-around flex flex-col">
           <div className="text-2xl text-center mt-8">
-            <div style={rubik.style} className="text-3xl font-medium">
-              November 3
+            <div className="text-gradient-green text-6xl font-extrabold">
+              <span className="bg-gradient-to-r from-lime-green to-cyan-mint inline-block text-transparent bg-clip-text">Inspire&#160;</span>
+               Create Elevate
             </div>
-            <div className="text-void-300 flex">
-              @ Easwari Engineering College
-              <Link
-                className="hidden md:block"
-                prefetch={false}
-                href="https://www.google.com/maps/place/SRM+Easwari+Engineering+College/@13.0314424,80.1793613,18z/data=!4m6!3m5!1s0x3a5260d62bc6942b:0x8cd23707b2ddfb87!8m2!3d13.031723!4d80.1795949!16s%2Fm%2F0h3snc4?entry=ttu"
-              >
-                <Image src={location} height={32} width={32} alt="" />
-              </Link>
+            {/*<div className="text-void-300 flex">*/}
+            {/*  @ IITR*/}
+            {/*  <Link*/}
+            {/*    className="hidden md:block"*/}
+            {/*    prefetch={false}*/}
+            {/*    href="https://www.google.com/maps/place/SRM+Easwari+Engineering+College/@13.0314424,80.1793613,18z/data=!4m6!3m5!1s0x3a5260d62bc6942b:0x8cd23707b2ddfb87!8m2!3d13.031723!4d80.1795949!16s%2Fm%2F0h3snc4?entry=ttu"*/}
+            {/*  >*/}
+            {/*    <Image src={location} height={32} width={32} alt="" />*/}
+            {/*  </Link>*/}
 
-            </div>
-            <div className="mt-1 text-xs text-void-300">
-              Online registrations will close at 11:00 AM on November 2, 2023.
-            </div>
+            {/*</div>*/}
+            {/*<div className="mt-1 text-xs text-void-300">*/}
+            {/*  Online registrations will close at 11:00 AM on November 2, 2023.*/}
+            {/*</div>*/}
           </div>
           <Image
             src={expand_more}
@@ -174,75 +175,75 @@ export default function Home() {
       </section>
 
       {/* Sponsors Section */}
-      <section className="w-full">
-        <h2
-          style={rubik.style}
-          className="text-3xl border-b-[1px] border-void-500 pb-[4px] mx-6 mt-10"
-        >
-          Sponsors
-        </h2>
+      {/*<section className="w-full">*/}
+      {/*  <h2*/}
+      {/*    style={rubik.style}*/}
+      {/*    className="text-3xl border-b-[1px] border-void-500 pb-[4px] mx-6 mt-10"*/}
+      {/*  >*/}
+      {/*    Sponsors*/}
+      {/*  </h2>*/}
 
-        <div className="flex flex-col items-center px-2 mt-2 gap-8 md:gap-10">
-          <div className="mt-2  flex flex-col items-center text-center text-void-300">
-            <p>
-              Title Sponsor
-            </p>
-            <div className="mt-2 md:-mt-3 md:px-2">
-              <Link
-                href=""
-                className="md:mt-0 md:px-2  pointer-events-none"
-              >
+      {/*  <div className="flex flex-col items-center px-2 mt-2 gap-8 md:gap-10">*/}
+      {/*    <div className="mt-2  flex flex-col items-center text-center text-void-300">*/}
+      {/*      <p>*/}
+      {/*        Title Sponsor*/}
+      {/*      </p>*/}
+      {/*      <div className="mt-2 md:-mt-3 md:px-2">*/}
+      {/*        <Link*/}
+      {/*          href=""*/}
+      {/*          className="md:mt-0 md:px-2  pointer-events-none"*/}
+      {/*        >*/}
 
-                <Image
-                  src={sponsor_slam}
-                  alt=""
-                  height={70}
-                />
-              </Link>
-            </div>
-          </div>
+      {/*          <Image*/}
+      {/*            src={sponsor_slam}*/}
+      {/*            alt=""*/}
+      {/*            height={70}*/}
+      {/*          />*/}
+      {/*        </Link>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
 
-          <div className="mt-1  flex flex-col items-center text-center text-void-300">
-            <p>
-              Technical Events Sponsor
-            </p>
+      {/*    <div className="mt-1  flex flex-col items-center text-center text-void-300">*/}
+      {/*      <p>*/}
+      {/*        Technical Events Sponsor*/}
+      {/*      </p>*/}
 
-            <div className=" md:mt-0 md:px-2">
-              <Link
-                href="https://expleo.com/global/en/"
-              >
-                <Image
-                  className="transition hover:scale-105"
-                  src={sponsor_expleo}
-                  alt=""
-                  height={80}
-                />
-              </Link>
-            </div>
-          </div>
+      {/*      <div className=" md:mt-0 md:px-2">*/}
+      {/*        <Link*/}
+      {/*          href="https://expleo.com/global/en/"*/}
+      {/*        >*/}
+      {/*          <Image*/}
+      {/*            className="transition hover:scale-105"*/}
+      {/*            src={sponsor_expleo}*/}
+      {/*            alt=""*/}
+      {/*            height={80}*/}
+      {/*          />*/}
+      {/*        </Link>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
 
-          <div className="mt-2 flex flex-col items-center text-center text-void-300  ">
-            <div>
-              <p>
-                Non Technical Events sponsor
-              </p>
-            </div>
+      {/*    <div className="mt-2 flex flex-col items-center text-center text-void-300  ">*/}
+      {/*      <div>*/}
+      {/*        <p>*/}
+      {/*          Non Technical Events sponsor*/}
+      {/*        </p>*/}
+      {/*      </div>*/}
 
-            <div className="mt-5 md:mt-5 md:px-2">
-              <Link
-                href=""
+      {/*      <div className="mt-5 md:mt-5 md:px-2">*/}
+      {/*        <Link*/}
+      {/*          href=""*/}
 
-              >
-                <Image
-                  src={sponsor_art}
-                  alt=""
-                  height={60}
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/*        >*/}
+      {/*          <Image*/}
+      {/*            src={sponsor_art}*/}
+      {/*            alt=""*/}
+      {/*            height={60}*/}
+      {/*          />*/}
+      {/*        </Link>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
     </main>
   )
 }
