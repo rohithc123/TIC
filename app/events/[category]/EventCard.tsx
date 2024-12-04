@@ -24,7 +24,7 @@ export default function EventCard({
     <Link
       href={`/events/${ev.category}/${code}`}
       key={code}
-      className="w-full max-w-sm transition hover:scale-105 text-left rounded-lg border-[1px] border-void-500 py-6 px-4 relative overflow-hidden"
+      className="w-full max-w-sm transition hover:scale-105 text-left text-white rounded-lg border-[1px] border-void-500 py-6 px-4 relative overflow-hidden"
     >
       {/* Top Row */}
       <div className="flex w-full justify-between">

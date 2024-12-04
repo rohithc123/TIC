@@ -1,6 +1,6 @@
 export interface EventInfo {
   name: string
-  category: 'technical' | 'nontechnical'
+  category: 'competitions' | 'summit'
   type: 'team' | 'solo'
   online: boolean
   external?: string
@@ -24,7 +24,7 @@ export interface EventInfo {
 const eventsLiteral: { [key: string]: EventInfo } = {
   code_hunt: {
     name: 'Hunt for Code',
-    category: 'technical',
+    category: 'competitions',
     type: 'team',
     online: false,
     fee: {
@@ -51,7 +51,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   bug_off: {
     name: 'Bug Off',
-    category: 'technical',
+    category: 'competitions',
     type: 'team',
     online: false,
     fee: {
@@ -77,7 +77,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   pair_programming: {
     // Intentional unicode SHY character below
     name: 'Pair Program­ming',
-    category: 'technical',
+    category: 'competitions',
     type: 'team',
     online: false,
     fee: {
@@ -108,10 +108,10 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   paper_presentation: {
     name: 'Paper Present­ation',
     description:
-      'Paper Presentation is a technical event which challenges participants to showcase their thinking, knowledge and presentation skills. The participant teams have to prepare a detailed paper presentation on any of the computer science topics and address it infront of the panel.',
+      'Paper Presentation is a competitions event which challenges participants to showcase their thinking, knowledge and presentation skills. The participant teams have to prepare a detailed paper presentation on any of the computer science topics and address it infront of the panel.',
     rules: [
       'Abstract and presentation should be submitted in the following Google Form.',
-      'Topics from all Technical Domains are accepted.',
+      'Topics from all competitions Domains are accepted.',
       'Working model must be presented. If not, concept must be presented in detail. ',
       'Each group should present for 8-10 minutes',
       'Paper submitted must be in IEEE Format.',
@@ -131,7 +131,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
       max: 4,
     },
     maxTeams: 8,
-    category: 'technical',
+    category: 'competitions',
     type: 'team',
     online: false,
     fee: {
@@ -142,7 +142,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   design_decode: {
     name: 'Design Decode',
-    category: 'technical',
+    category: 'competitions',
     type: 'team',
     online: false,
     fee: {
@@ -169,7 +169,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   jargon_busters: {
     name: 'Jargon Busters',
-    category: 'technical',
+    category: 'competitions',
     type: 'team',
     online: false,
     fee: {
@@ -177,7 +177,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
       amount: 50,
     },
     description:
-      'Teams will receive a topic 30 minutes before the event. They must create a PowerPoint presentation to explain the technical subject without using any technical jargons. The teams performance is evaluated according to their PowerPoint presentation, comprehension of the subject matter, and their capability to effectively explain the topic.',
+      'Teams will receive a topic 30 minutes before the event. They must create a PowerPoint presentation to explain the competitions subject without using any competitions jargons. The teams performance is evaluated according to their PowerPoint presentation, comprehension of the subject matter, and their capability to effectively explain the topic.',
     rules: [
       'Everyone must bring laptop for the competition',
       'Teams will receive their topics on the spot just before the event.',
@@ -185,7 +185,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
       'Teams will be required to submit the final version of their PowerPoint before the event commences.',
       'Each team will have a 10-minute slot to present their PowerPoint and explain the topic.',
       'Following the presentation, the judges will ask questions to assess the teams understanding of the topic.',
-      'Any use of technical terminology will result in disqualification.',
+      'Any use of competitions terminology will result in disqualification.',
       'The judges decision is final.',
     ],
     prizes: ['TBD', 'TBD', 'TBD'],
@@ -198,7 +198,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   qr_quest: {
     name: 'QR Quest',
-    category: 'technical',
+    category: 'competitions',
     type: 'team',
     online: false,
     fee: {
@@ -225,7 +225,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   treasure_hunt: {
     name: 'e-Treasure Hunt',
-    category: 'technical',
+    category: 'competitions',
     type: 'team',
     online: false,
     fee: {
@@ -253,7 +253,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   tech_feud: {
     name: 'Tech Feud',
-    category: 'technical',
+    category: 'competitions',
     type: 'team',
     online: false,
     fee: {
@@ -261,7 +261,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
       amount: 100,
     },
     description:
-      'Join us for ‘Technical Feud’ , a high-energy competition where teams face off in a battle of tech knowledge, answering questions to prove who’s the tech-saviest team!',
+      'Join us for ‘competitions Feud’ , a high-energy competition where teams face off in a battle of tech knowledge, answering questions to prove who’s the tech-saviest team!',
     rules: [
       'The one to hit the buzzer first gets the chance to answer.',
       'Teams aim to guess all 5 answers for points.',
@@ -281,7 +281,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   futsal: {
     name: 'Futsal',
-    category: 'nontechnical',
+    category: 'summit',
     type: 'team',
     online: false,
     fee: {
@@ -313,7 +313,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   channel_surfing: {
     name: 'Channel Surfing',
-    category: 'nontechnical',
+    category: 'summit',
     type: 'team',
     online: false,
     fee: {
@@ -340,7 +340,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   title_event: {
     name: 'Title Event - Mr/Ms. Kratos',
-    category: 'nontechnical',
+    category: 'summit',
     type: 'solo',
     online: false,
     fee: {
@@ -368,7 +368,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   cine_quiz: {
     name: 'Cine Quiz',
-    category: 'nontechnical',
+    category: 'summit',
     type: 'team',
     online: false,
     fee: {
@@ -395,7 +395,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
 
   hunger_games: {
     name: 'Hunger Games',
-    category: 'nontechnical',
+    category: 'summit',
     type: 'team',
     online: false,
     fee: {
@@ -421,7 +421,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   fifa: {
     name: 'Fifa',
-    category: 'nontechnical',
+    category: 'summit',
     type: 'team',
     online: false,
     fee: {
@@ -448,7 +448,7 @@ const eventsLiteral: { [key: string]: EventInfo } = {
   },
   femscreen: {
     name: 'FemScreen',
-    category: 'nontechnical',
+    category: 'summit',
     type: 'team',
     online: false,
     fee: {

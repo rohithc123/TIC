@@ -79,10 +79,10 @@ export default function Navbar() {
   }
 
   return (
-    <div className="z-20 w-screen flex p-6 md:py-3 text-2xl items-center border-b-[1px] border-void-500  backdrop-blur fixed top-0 bg-void-950/50 md:justify-between">
+    <div className="z-20 w-screen flex p-6 md:py-3 text-2xl items-center border-b-[1px] border-void-500  backdrop-blur fixed top-0 bg-void-950 md:justify-between">
       {/* Navbar */}
-      <Link style={poly.style} href="/" className="md:mr-6">
-        KRATOS
+      <Link style={poly.style} href="/" className="md:mr-6 text-white">
+        TIC
       </Link>
 
       <Image
@@ -150,22 +150,22 @@ export default function Navbar() {
 
         {/* Top Three options */}
         <Link
-          href="/events/technical"
+          href="/events/competitions"
           onClick={() => {
             setIsActive(false)
           }}
           className="mx-8 mb-4"
         >
-          Technical
+          Competitions
         </Link>
         <Link
-          href="/events/nontechnical"
+          href="/events/summit"
           onClick={() => {
             setIsActive(false)
           }}
           className="mx-8 mb-4"
         >
-          Non-Technical
+          Summit
         </Link>
         {/* <Link
           className="mx-8 mb-4"
