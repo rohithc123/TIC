@@ -11,16 +11,16 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      style={{ backgroundImage: "url('/dotted-pattern.png')" }}
+      // style={{ backgroundImage: "url('/dotted-pattern.png')" }}
       className="flex flex-col items-center w-full md:max-w-[768px] relative p-6 pt-12 gap-6 overflow-hidden bg-repeat-x mt-16"
     >
       {/* Logo */}
-      <Image src={logo} alt="Kratos 23 logo" width={64} height={64} />
+      <Image src={logo} alt="TIC logo" width={64} height={64} />
 
       {/* Instagram link */}
-      <Link href="https://www.instagram.com/_kratos23/" className="flex">
+      <Link href="https://www.instagram.com/thinkindia_iitr/" className="flex">
         <Image src={instagram} alt="Instagram logo" width={24} height={24} />
-        &ensp;@_kratos23
+        &ensp;@thinkindia_iitr
       </Link>
 
       {/* HR */}
@@ -31,34 +31,34 @@ export default function Footer() {
         <div className="flex gap-4">
           <div>
             <h4 className="text-xl" style={rubik.style}>
-              Janagan
+              Mr. Bhavesh
             </h4>
-            <p className="text-sm">9941686706</p>
+            <p className="text-sm">9876543210</p>
           </div>
           <div>
             <h4 className="text-xl" style={rubik.style}>
-              Hariharan
+              Mr. Naveen
             </h4>
-            <p className="text-sm">9384979459</p>
+            <p className="text-sm">9876543210</p>
           </div>
         </div>
       </div>
 
       {/* Copyright */}
       <p className="text-void-300">
-        © 2023 Kratos&apos;23 ·{' '}
+        © 2024 TIC IITR&apos;24 ·{' '}
         <Link
-          href="https://github.com/nithssh/kratos23"
+          href="https://github.com/rohithc123/TIC"
           className="hover:text-void-200 transition"
         >
-          GitHub repo ·{' '}
+          GitHub repo {' '}
         </Link>
-        <Link
-          href="/guidelines"
-          className="hover:text-void-200 transition"
-        >
-        Guidelines
-        </Link>
+        {/*<Link*/}
+        {/*  href="/guidelines"*/}
+        {/*  className="hover:text-void-200 transition"*/}
+        {/*>*/}
+        {/*Guidelines*/}
+        {/*</Link>*/}
       </p>
     </footer>
   )

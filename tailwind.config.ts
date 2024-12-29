@@ -19,7 +19,9 @@ const config: Config = {
         },
         'cherry': '#ED2E3C',
         'vinyl': '#FFCA41',
-        
+        'lime-green':'#43E97B',
+        'cyan-mint':'#38F9D7',
+
       },
       // backgroundImage: {
       //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

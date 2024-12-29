@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react'
 const poly = Poly({
   weight: '400',
   subsets: ['latin'],
+
 })
 
 export default function Navbar() {
@@ -78,10 +79,10 @@ export default function Navbar() {
   }
 
   return (
-    <div className="z-20 w-screen flex p-6 md:py-3 text-2xl items-center border-b-[1px] border-void-500  backdrop-blur fixed top-0 bg-void-950/50 md:justify-between">
+    <div className="z-20 w-screen flex p-6 md:py-3 text-2xl items-center border-b-[1px] border-void-500  backdrop-blur fixed top-0 bg-void-950 md:justify-between">
       {/* Navbar */}
-      <Link style={poly.style} href="/" className="md:mr-6">
-        KRATOS
+      <Link style={poly.style} href="/" className="md:mr-6 text-white">
+        TIC
       </Link>
 
       <Image
@@ -123,7 +124,7 @@ export default function Navbar() {
         }}
         id="drawer"
         style={{ height: drawerHeight }}
-        className={`transition duration-300 text-white flex flex-col text-xl h-screen bg-black border-l-[1px] border-void-500 w-[80%] fixed top-0 right-0 ${
+        className={`transition duration-300 text-black flex flex-col text-xl h-screen bg-white border-l-[1px] border-void-500 w-[80%] fixed top-0 right-0 ${
           isActive ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -149,22 +150,22 @@ export default function Navbar() {
 
         {/* Top Three options */}
         <Link
-          href="/events/technical"
+          href="/events/competitions"
           onClick={() => {
             setIsActive(false)
           }}
           className="mx-8 mb-4"
         >
-          Technical
+          Competitions
         </Link>
         <Link
-          href="/events/nontechnical"
+          href="/events/summit"
           onClick={() => {
             setIsActive(false)
           }}
           className="mx-8 mb-4"
         >
-          Non-Technical
+          Summit
         </Link>
         {/* <Link
           className="mx-8 mb-4"
@@ -198,7 +199,7 @@ export default function Navbar() {
               Contact
             </Link>
           </div>
-          <div className="mx-4 mt-4 h-[1px] bg-gradient-to-r from-cherry to-vinyl cursor-pointer" />
+          <div className="mx-4 mt-4 h-[1px] bg-gradient-to-r from-lime-green to-cyan-mint cursor-pointer" />
         </div>
       </nav>
 
@@ -213,12 +214,6 @@ export default function Navbar() {
         >
           Non-Technical
         </Link>
-        {/* <Link
-          href="https://pre.kratos23.com/"
-          className="transition hover:scale-110"
-        >
-          Pre-Events
-        </Link> */}
         <Link href="/contributors" className="transition hover:scale-110">
           Contributors
         </Link>
@@ -231,20 +226,12 @@ export default function Navbar() {
         className="hidden md:flex md:justify-end mr-4 relative cursor-pointer w-[90px] md:mr-0 md:ml-6"
       >
         <Image
-          className="w-8 h-8 select-none "
+          className="hidden w-8 h-8 select-none "
           src={bag}
           alt=""
           width={32}
           height={32}
         />
-        {/* TODO the bag size badge */}
-        {/* Note: the problem is updating the badge when the cookie changes, so 
-        it is better to not have the number currently than to have a desynced number */}
-        {/* <div className="flex justify-center bg-white text-black rounded-full text-center absolute h-5 w-5 translate-x-4 -translate-y-4 text-sm self-center">
-          <p className="self-center text-center">
-            1
-          </p>
-        </div> */}
       </Link>
     </div>
   )

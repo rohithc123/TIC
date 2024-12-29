@@ -1,4 +1,4 @@
-import arrow_back from '@/public/arrow_back.svg'
+import arrow_back from '@/public/arrow_back.png'
 import { Poly, Rubik } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -47,7 +47,7 @@ export default function EventDetailsPage({
       {/* Back Button */}
       <Link
         href={`/events/${ev.category}`}
-        className="flex my-6 ml-2 gap-1 text-xl text-cherry"
+        className="flex my-6 ml-2 gap-1 text-xl text-cherry text-void-300"
       >
         <Image src={arrow_back} width={24} height={24} alt="" /> Back to events
       </Link>
@@ -74,15 +74,15 @@ export default function EventDetailsPage({
           {/* <div>{ev.maxTeams} teams</div> */}
         </div>
 
-        {!ev.external && <AddToBagButton eventCode={params.event} />}
+        {/*{!ev.external && <AddToBagButton eventCode={params.event} />}*/}
 
-        {ev.external && (
-          <ExternalButton link={ev.external} label="Google Form" />
-        )}
+        {/*{ev.external && (*/}
+        {/*  <ExternalButton link={ev.external} label="Google Form" />*/}
+        {/*)}*/}
       </header>
 
       <div className="px-4">
-        <p className="text-void-200">{ev.description}</p>
+        <p className="text-void-300">{ev.description}</p>
 
         <h2
           style={rubik.style}
@@ -90,7 +90,7 @@ export default function EventDetailsPage({
         >
           Prizes
         </h2>
-        <p className="p-3 bg-void-700 mt-4 rounded-lg border-[1px] border-void-500 font-light">
+        <p className="border-[1.5px] border-black p-3 bg-void-700 mt-4 rounded-lg border-[1px] bg-gradient-to-br from-lime-green to-cyan-mint text-black font-light">
           🏆 {ev.prizes[0]} <br />
           🥈 {ev.prizes[1]} <br />
           🥉 {ev.prizes[2]}
@@ -102,7 +102,7 @@ export default function EventDetailsPage({
         >
           Rules
         </h2>
-        <ol className="list-decimal list-outside p-3 pl-8 bg-void-700 mt-4 rounded-lg border-[1px] border-void-500 font-light">
+        <ol className="list-decimal list-outside p-3 pl-8 bg-void-700 mt-4 rounded-lg border-[1px] border-void-500 text-white font-light">
           {ev.rules.map((v, i) => (
             <li key={i}>{v}</li>
           ))}
